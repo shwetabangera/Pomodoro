@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  text-align: justify;
+  font-style: italic;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+#pcontainer {
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 70%;
+  background: rgb(39, 36, 36);
+  height: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+#timer {
+  color: rgb(214, 203, 48);
+  font-size: 50px;
+  margin: 10px auto;
+  border: 5px solid rgb(240, 101, 21);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  width: 200px;
+  height: 200px;
+}
+
+#time {
+  margin-top: 70px;
+  z-index: 1;
+  position: relative;
+}
+#filler {
+  background: #ddffcc;
+  height: 0px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+}
+#buttons button {
+  background: #43a089;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  height: 50px;
+  width: 90px;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+#buttons button#shortBreak {
+  background: rgb(192, 106, 185);
+}
+
+#buttons button#longBreak {
+  background: rgb(121, 216, 121);
+}
+
+#buttons button#stop {
+  background: rgb(211, 98, 98);
+}
+#buttons button#reset {
+  background: rgb(233, 149, 24);
+}
+@media (max-width: 479px) {
+  #pcontainer {
+    margin: 0px;
+    padding: 0px;
+  }
+  #buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 325px) {
+  #pcontainer {
+    margin: 0px;
+    padding: 0px;
+  }
+  #buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  #timers {
+    color: rgb(214, 203, 48);
+    font-size: 50px;
+    margin: 10px auto;
+    border: 5px solid rgb(240, 101, 21);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    width: 10%;
+    height: 10%;
+  }
+
+  #time {
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+  }
+}
